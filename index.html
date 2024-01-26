@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Random Number Generator</title>
+    <title>Zebra Random Number Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #generate {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #generate:hover {
+            background-color: #45a049;
+        }
+        #numberDisplay {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .message {
+            margin-top: 20px;
+            color: #333;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Random Number Generator</h1>
-    <button id="generate">Generate Number</button>
+    <h1>Zebra Random Number Generator</h1>
+    <button id="generate">Randomize</button>
     <p id="numberDisplay"></p>
+    <div class="message" id="messageDisplay"></div>
+
     <!-- Firebase Scripts -->
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
