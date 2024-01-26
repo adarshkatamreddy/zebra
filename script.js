@@ -1,4 +1,4 @@
-// Your web app's Firebase configuration
+
 var firebaseConfig = {
     apiKey: "AIzaSyCpUDfKEeyAMILqkuuxUzCHGrMTZaRUsGE",
     authDomain: "zebra-random-number.firebaseapp.com",
@@ -9,7 +9,6 @@ var firebaseConfig = {
     appId: "1:904013490719:web:9481a20d5ce0704423032a",
 };
 
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
 
