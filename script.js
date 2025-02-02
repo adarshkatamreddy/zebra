@@ -16,7 +16,7 @@ document.getElementById('generate').addEventListener('click', function() {
 
     generatedNumbersRef.once('value').then(function(snapshot) {
         var generatedNumbers = snapshot.val() || [];
-        const totalNumbers = 220;
+        const totalNumbers = 130;
 
         // Check if all numbers have been generated
         if (generatedNumbers.length >= totalNumbers) {
@@ -32,7 +32,7 @@ document.getElementById('generate').addEventListener('click', function() {
         generatedNumbers.push(newNumber);
         
         document.getElementById('numberDisplay').innerText = "Subject ID: " + newNumber;
-        var message = newNumber % 2 === 0 ? "Randomised to 4 hour bedrest" : "Randomised to 1 hour bedrest";
+        var message = newNumber % 2 === 0 ? "Randomised to 4 hour-Z stitch removal" : "Randomised to 2 hour-Z stitch removal";
         document.getElementById('messageDisplay').innerText = message;
         
         generatedNumbersRef.set(generatedNumbers); // Update the list of generated numbers
