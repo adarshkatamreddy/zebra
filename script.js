@@ -16,7 +16,7 @@ document.getElementById('generate').addEventListener('click', function() {
 
     generatedNumbersRef.once('value').then(function(snapshot) {
         var generatedNumbers = snapshot.val() || [];
-        const totalNumbers = 130;
+        const totalNumbers = 140;
 
         // Check if all numbers have been generated
         if (generatedNumbers.length >= totalNumbers) {
